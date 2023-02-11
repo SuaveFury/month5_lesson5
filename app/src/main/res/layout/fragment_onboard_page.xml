@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="40dp"
+    android:background="@color/background"
+    tools:context=".ui.OnBoardFragment">
+
+
+    <ImageView
+        android:layout_marginTop="90dp"
+        android:src="@drawable/board1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/img_board"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_board"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/title"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:text="@string/description"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start"
+        android:text="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:paddingVertical="17dp"
+        app:cornerRadius="48dp"
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">month5_homework5</string>
+    <string name="title" />
+    <string name="description" />
+    <string name="start" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello  fragment</string>
+</resources>
